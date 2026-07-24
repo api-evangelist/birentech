@@ -1,7 +1,28 @@
 aid: birentech
-name: birentech
-description: birentech is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/birentech.png
+name: Biren Technology
+description: >-
+  Biren Technology (Shanghai Biren Technology Co., Ltd.) is a Chinese fabless
+  semiconductor company that designs general-purpose GPUs (GPGPUs) for AI
+  training, inference, and high-performance computing. Its flagship BR100-series
+  accelerators are programmed through BIRENSUPA, a CUDA-like software platform
+  that bundles the BRCC compiler, a hardware abstraction layer, deep-learning
+  and general-compute acceleration libraries, and a developer toolchain with
+  support for PyTorch, TensorFlow, and PaddlePaddle. Biren distributes its
+  drivers, SDK, and documentation through its developer.birentech.com developer
+  community rather than a public web/REST API. Added to the API Evangelist
+  network as a portfolio company of Qiming Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/birentech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +30,23 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  No HTTP/REST/GraphQL/web API surface. Biren ships a native GPU SDK toolchain
+  (BIRENSUPA driver, BRCC compiler, acceleration libraries) via gated downloads
+  on developer.birentech.com. Spec-bearing artifacts (openapi, mcp, scopes,
+  authentication, conventions, errors, asyncapi, skills, arazzo) are N/A.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- GPU
+- AI Chips
+- Semiconductors
+- Machine Learning
+- High Performance Computing
+- SDK
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,14 @@ maintainers:
 common:
 - type: Website
   url: https://birentech.com
+- type: DeveloperPortal
+  url: https://developer.birentech.com
+- type: Documentation
+  url: https://developer.birentech.com/Document_center.html
+- type: DomainSecurity
+  url: security/birentech-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
